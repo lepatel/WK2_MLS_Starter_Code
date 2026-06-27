@@ -4,6 +4,7 @@ import {
     createSubreddit,
     getSubredditWithThreads
 } from '../controllers/subredditController.js';
+import { authHandler } from '../middleware/authHandler.js';
 
 const router = express.Router();
 
@@ -18,6 +19,8 @@ const router = express.Router();
  * is already applied in src/app.js via: app.use('/api/subreddits', subredditRoutes)
  */
 
-// YOUR CODE HERE
+router.get('/', getAllSubreddits);
+router.post('/', authHandler, createSubreddit);
+router.get('/:id', getSubredditWithThreads);
 
 export default router;
