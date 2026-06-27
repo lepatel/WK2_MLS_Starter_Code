@@ -2,10 +2,9 @@
   "name": "threadhive-backend",
   "version": "1.0.0",
   "scripts": {
-    "queries": "node queries.js",
-    "populate": "node populate_db.js",
-    "seed": "node scripts/seed.js",
-    "test:crud": "node scripts/crud-tests.js"
+    "start": "node main.js",
+    "populate": "node src/scripts/populate_db.js",
+    "dev": "nodemon main.js"
   },
   "type": "module",
   "keywords": [],
@@ -13,7 +12,12 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "mongoose": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
