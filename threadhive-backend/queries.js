@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
-import User from "./models/User.js"
-import Subreddit from './models/Subreddit.js';
-import Thread from './models/Thread.js';
+import User from "./src/models/User.js"
+import Subreddit from './src/models/Subreddit.js';
+import Thread from './src/models/Thread.js';
 
 
 async function query1() {

@@ -4,9 +4,9 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 
-import User from '../models/User.js';
-import Subreddit from '../models/Subreddit.js';
-import Thread from '../models/Thread.js';
+import User from '../src/models/User.js';
+import Subreddit from '../src/models/Subreddit.js';
+import Thread from '../src/models/Thread.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
